@@ -6,7 +6,7 @@
 
 # The URL of your website.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-#baseurl = "https://sriharishastry.github.io/portfolio.git/"
+baseurl = "/"
 
 # Title of your site
 title = "Academic"
@@ -52,21 +52,28 @@ enableGitInfo = false
   # AUTHOR SETUP
 
   # Your details.
-  name = "Sushmita Ravindranath Punneshetty"
-  role = "Graduate Student"
+  name = "Lena Smith"
+  role = "Professor of Artificial Intelligence"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "University of Texas at Arlington", url = "https://www.uta.edu/uta/" } ]
+  organizations = [ { name = "Stanford University", url = "" } ]
 
-  gravatar = false # Get your avatar from Gravatar.com? (true/false)
-  avatar = "sush.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  gravatar = false  # Get your avatar from Gravatar.com? (true/false)
+  avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
 
   # Details for the Contact Widget
-  email = "sushmita.ravindranathpun@mavs.uta.edu"
-  address = "1006 Greek Row Apartment number 330,Arlington,Texas,USA 76013"
-  phone = "682 360 5617"
- 
+  email = "test@example.org"
+  address = "Building 1 Room 1, Stanford University, California, 90210, USA"
+  office_hours = """
+  Monday 10:00 to 13:00<br>
+  Wednesday 09:00 to 10:00<br>
+  Otherwise email to book an appointment
+  """
+  phone = "888 888 88 88"
+  skype = "echo123"
+  telegram = ""
+  keybase = ""  # Your keybase.io username.
 
   # Enter an optional link for booking appointments (e.g. calendly.com).
   appointment_url = ""
@@ -100,7 +107,7 @@ enableGitInfo = false
 
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `dark`, `apogee`, `1950s`, `coffee`, `cupcake`.
-  color_theme = "dark"
+  color_theme = "default"
   # Enable users to switch between day and night mode?
   day_night = true
 
@@ -112,7 +119,7 @@ enableGitInfo = false
   description = ""
 
   # Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
-  sharing_image = "portrait.jpg"
+  sharing_image = ""
 
   # Twitter username (without @). Used when a vistor shares your site on Twitter.
   twitter = ""
@@ -189,15 +196,15 @@ enableGitInfo = false
   #   The language can be edited below.
   #   For multilingual sites, `publication_types` can be copied to each language section at the end of this file and
   #   translated.
- # publication_types = [
-  #  'Uncategorized',  # 0
-  #  'Conference paper',  # 1
-  #  'Journal article',  # 2
-  #  'Manuscript',  # 3
-  #  'Report',  # 4
-  #  'Book',  # 5
-  #  'Book section'  # 6
- #	 ]
+  publication_types = [
+    'Uncategorized',  # 0
+    'Conference paper',  # 1
+    'Journal article',  # 2
+    'Manuscript',  # 3
+    'Report',  # 4
+    'Book',  # 5
+    'Book section'  # 6
+  ]
 
   # Configuration of talk pages.
   [params.talks]
@@ -256,34 +263,29 @@ enableGitInfo = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fas"
-    link = "mailto:sushmita.ravindranathpun@mavs.uta.edu"  # For a direct email link, use "mailto:test@example.org".
+    link = "#contact"  # For a direct email link, use "mailto:test@example.org".
 
   [[params.social]]
     icon = "twitter"
     icon_pack = "fab"
-    link = "https://twitter.com/sushmitaravip"
+    link = "https://twitter.com/GeorgeCushen"
 
   [[params.social]]
-    icon = "instagram"
-    icon_pack = "fab"
-    link = "https://www.instagram.com/sushmitaravip/"
+    icon = "google-scholar"
+    icon_pack = "ai"
+    link = "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
 
   [[params.social]]
     icon = "github"
     icon_pack = "fab"
-    link = "https://github.com/sushmitaravip"
-	
-	[[params.social]]
-    icon = "linkedin"
-    icon_pack = "fab"
-    link = "https://www.linkedin.com/in/sushmita-ravindranath-punneshetty-2a184ba4"
+    link = "https://github.com/gcushen"
 
   # Link to a PDF of your resume/CV from the About widget.
   # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
- [[params.social]]
-   icon = "cv"
-  icon_pack = "ai"
-   link = "files/cv.pdf"
+  # [[params.social]]
+  #   icon = "cv"
+  #   icon_pack = "ai"
+  #   link = "files/cv.pdf"
 
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
@@ -298,25 +300,25 @@ enableGitInfo = false
   url = "#about"
   weight = 1
 
-#[[menu.main]]
- # name = "Publications"
-#  url = "#publications_selected"
-#  weight = 2
+[[menu.main]]
+  name = "Publications"
+  url = "#publications_selected"
+  weight = 2
 
-#[[menu.main]]
-#  name = "Posts"
- # url = "#posts"
-#  weight = 3
+[[menu.main]]
+  name = "Posts"
+  url = "#posts"
+  weight = 3
 
 [[menu.main]]
   name = "Projects"
   url = "#projects"
   weight = 4
 
-#[[menu.main]]
-#  name = "Tutorials"
-#  url = "/tutorial/"
- # weight = 5
+[[menu.main]]
+  name = "Tutorials"
+  url = "/tutorial/"
+  weight = 5
 
 [[menu.main]]
   name = "Contact"
@@ -325,10 +327,10 @@ enableGitInfo = false
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
- [[menu.main]]
-   name = "CV"
-   url = "files/cv.pdf"
-   weight = 7
+# [[menu.main]]
+#    name = "CV"
+#    url = "files/cv.pdf"
+#    weight = 7
 
 # Search.
 [params.search]
